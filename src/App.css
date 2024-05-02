@@ -1,0 +1,44 @@
+/* App.css */
+
+.first-image {
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+}
+
+.second-image {
+  width: 500px;
+  height: 250px;
+  margin-right: 10px; 
+  display: block;
+  margin-left: 20px;
+  flex-direction: column; 
+  margin-top: 20px;/* Display the images one below the other */
+  align-items: center;
+  border-bottom: 1px solid black; /* Adjust margin as needed */
+}
+
+.normal-image {
+  width: 200px;
+  height: 100px;
+  margin-right: 10px; /* Adjust margin as needed */
+  margin-bottom: 40px;
+  margin-top: 20px; 
+  margin-left: 20px;
+  /* Adjust margin as needed */
+}
+
+.normal-image img::after {
+  content: ""; /* Add content for the pseudo-element */
+  position: absolute; /* Set position to absolute */
+  bottom: -5px; /* Adjust vertical position as needed */
+  left: 0; /* Align with the left edge of the container */
+  width: 100%; /* Make the line span the full width of the container */
+  height: 1px; /* Set the height of the line */
+  background-color: black; /* Set the color of the line */
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
